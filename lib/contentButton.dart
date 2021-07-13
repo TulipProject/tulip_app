@@ -1,31 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:tulip_app/mediaCategoryPage.dart';
 
-class mediaButton extends StatefulWidget{
+class contentButton extends StatefulWidget{
   final image;
   final title;
 
-  mediaButton(this.image, this.title){}
+  contentButton(this.image, this.title){}
   @override
   State<StatefulWidget> createState() {
-    return _mediaButton(image, title);
+    return _contentButton(image, title);
   }
   }
 
-class _mediaButton extends State<mediaButton> {
+class _contentButton extends State<contentButton> {
   final image;
   final title;
 
   final ButtonStyle flatButtonStyle = TextButton.styleFrom(
     primary: Colors.black87,
-    minimumSize: Size(2, 1),
+    minimumSize: Size(5, 1),
     padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 16),
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.all(Radius.circular(2.0)),
     ),
   );
 
-  _mediaButton(this.image, this.title){}
+  _contentButton(this.image, this.title){}
   
   Widget build(BuildContext context){
     return TextButton(

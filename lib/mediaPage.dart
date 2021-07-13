@@ -6,7 +6,7 @@ class mediaPage extends StatelessWidget{
 
   Widget build(BuildContext){
     return Scaffold(
-      body: Column(children: <Widget>[mediaButton(mediaButtons[0]), mediaButton(mediaButtons[1])],)
+      body: Column(children: <Widget>[mediaButton(mediaButtons[0], Text('Basics')), mediaButton(mediaButtons[1], Text('Mental Health'))],)
     );
   }
 }
