@@ -14,7 +14,7 @@ class mediaCategoryPage extends StatelessWidget{
       appBar: AppBar(title: categoryTitle),
       body: 
           Column(children: [
-            contentButton('assets/Logo.jpg', 'What is a Period?')
+            contentButton('assets/Logo.jpg', 'What is a Period?', '1m 24s')
             ],),
          
     );
