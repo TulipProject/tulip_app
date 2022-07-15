@@ -25,9 +25,6 @@ class navState extends State<Nav> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Tulip App'),
-      ),
       body: Center(
         child: widgetOptions.elementAt(_currentIndex),
       ),
@@ -48,6 +45,7 @@ class navState extends State<Nav> {
         ],
         currentIndex: _currentIndex,
         onTap: _onTap,
+        selectedItemColor: Color.fromRGBO(247, 178, 178, 1.0),
       ),
     );
   }
